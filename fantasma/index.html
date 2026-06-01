@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FantasmaVerter Slime</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>FANTASMAVERTER<br>SLIME MODE</h1>
+
+  <p>Escolhe ficheiro ou cola link:</p>
+
+  <input type="file" id="fileInput">
+
+  <input type="text" id="urlInput" placeholder="Link do YouTube">
+
+  <p>Destino (simulado no GitHub Pages):</p>
+  <div id="folderName">Download automático</div>
+
+  <select id="format">
+    <option>mp3</option>
+    <option>wav</option>
+    <option>flac</option>
+    <option>mp4</option>
+    <option>mkv</option>
+    <option>avi</option>
+    <option>mov</option>
+  </select>
+
+  <button class="convert" onclick="startConversion()">⚡ CONVERTER ⚡</button>
+
+  <div class="progress">
+    <div class="bar" id="bar"></div>
+  </div>
+
+  <div id="status">0%</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
